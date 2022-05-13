@@ -1,5 +1,5 @@
 /* eslint-disable react/button-has-type */
-import React from "react";
+import React, { useState } from "react";
 
 const theme = {
   colors: {
@@ -169,11 +169,15 @@ interface ButtonProps {
   fullWidth?: boolean;
   size?: "small" | "xsmall" | "medium" | "large" | "xlarge";
   variant?: "primary" | "secondary" | "tertiary";
+  background?: string;
+  color?: string;
 }
 
 export function Button({
   label,
   fullWidth,
+  background,
+  color,
   ...props
 }: ButtonProps): JSX.Element {
   const borderRadius = border[props.border];
@@ -191,13 +195,28 @@ export function Button({
   const buttonStyle =
     buttonStyles[buttonVariantToStyle[props.variant]](colorSet);
 
+  const style = {
+    hover: {
+      filter: "brightness(0.9)",
+    },
+  };
+
+  const [hover, setHover] = useState(false);
+
   return (
     <button
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
       style={{
         borderRadius,
         width: fullWidth ? "100%" : "auto",
         ...buttonSize,
         ...buttonStyle,
+        background: background ? background : buttonStyle.backgroundColor,
+        color: color ? color : buttonStyle.color,
+        transition: "all 0.2s",
+        cursor: "pointer",
+        ...(hover ? style.hover : null),
       }}
     >
       {label}
