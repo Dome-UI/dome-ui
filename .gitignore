@@ -88,6 +88,9 @@ types/
 .next
 out
 
+# Lib
+dist
+
 # Storybook
 dist-storybook
 
