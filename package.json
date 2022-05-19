@@ -103,6 +103,7 @@
   },
   "dependencies": {
     "@types/styled-components": "^5.1.25",
+    "react-icons": "^4.3.1",
     "styled-components": "^5.3.5"
   }
 }

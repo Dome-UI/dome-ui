@@ -1,20 +1,13 @@
+// Bibliotecas, types
 import styled from "styled-components";
-
-interface ButtonStylesProps {
-  props: {
-    label: string;
-    backgroundColor?: string;
-    color?: string;
-    fullWidth?: boolean;
-    hoverColor?: string;
-    clickColor?: string;
-    styles?: {};
-    padding: string;
-    borderRadius: string;
-  };
-}
+import { ButtonStylesProps } from "./types";
 
 export const Container = styled.button<ButtonStylesProps>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
   background: ${(props) => props.props.backgroundColor};
   width: ${(props) => (props.props.fullWidth ? "100%" : "auto")};
   color: ${(props) => props.props.color};
