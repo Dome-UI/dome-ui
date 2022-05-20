@@ -8,8 +8,12 @@ Bem vindo a biblioteca de componentes _open source_ **DomeUI**.
 
 Baixe as dependencias:
 
-```
+```sh
 yarn add domeui-components
+
+# ou
+
+npm install domeui-components
 ```
 
 Use o componente:
@@ -38,8 +42,8 @@ Personalize o seu componente:
 ## Componentes:
 
 - [x] Button
-- [ ]
-- [ ]
+- [x] Colors
+- [x] Typograph
 - [ ]
 - [ ]
 - [ ]

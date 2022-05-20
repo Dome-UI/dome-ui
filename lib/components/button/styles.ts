@@ -2,12 +2,16 @@
 import styled from "styled-components";
 import { ButtonStylesProps } from "./types";
 
+import { typograph } from "@lib/components";
+
 export const Container = styled.button<ButtonStylesProps>`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 
+  font-size: ${typograph.paragraphLarge.fontSize};
+  
   background: ${(props) => props.props.backgroundColor};
   width: ${(props) => (props.props.fullWidth ? "100%" : "auto")};
   color: ${(props) => props.props.color};
