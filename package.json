@@ -81,7 +81,8 @@
   },
   "peerDependencies": {
     "next": ">= 18.x.x",
-    "react": ">= 18.x.x"
+    "react": ">= 18.x.x",
+    "react-icons": "^4.3.1"
   },
   "release": {
     "plugins": [
@@ -110,7 +111,6 @@
   },
   "dependencies": {
     "@types/styled-components": "^5.1.25",
-    "minimist": "1.2.6",
     "react-icons": "^4.3.1",
     "styled-components": "^5.3.5"
   }
