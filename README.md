@@ -1,18 +1,45 @@
 # DomeUI
 
-## Preview Storybook:
+Bem vindo a biblioteca de componentes _open source_ **DomeUI**.
 
-[Storybook](https://webdev-components.vercel.app/?path=/story/bem-vindo--page)
+---
 
-## Uso da biblioteca:
+### Como usar
 
-Instalação:
-```bash
+Baixe as dependencias:
+
+```
 yarn add domeui-components
 ```
 
-Exemplo de uso:
+Use o componente:
+
 ```js
 import { Button } from "domeui-components";
 ```
 
+Personalize o seu componente:
+
+```js
+<Button
+  IconRight="ArrowRight"
+  backgroundColor="#F6BE27"
+  border="small"
+  buttonSize="medium"
+  color="#242424"
+  label="Press me"
+/>
+```
+
+## Preview Storybook:
+
+[Storybook](https://webdev-components.vercel.app/?path=/story/bem-vindo--page)
+
+## Componentes:
+
+- [x] Button
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
