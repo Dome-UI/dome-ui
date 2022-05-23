@@ -4,6 +4,12 @@ Bem vindo a biblioteca de componentes _open source_ **DomeUI**.
 
 ---
 
+## Explore os componentes no Storybook:
+
+[Storybook](https://dome-ui.vercel.app/)
+
+---
+
 ### Como usar
 
 Baixe as dependencias:
@@ -34,10 +40,6 @@ Personalize o seu componente:
   label="Press me"
 />
 ```
-
-## Explore os componentes no Storybook:
-
-[Storybook](https://webdev-components.vercel.app/?path=/story/bem-vindo--page)
 
 ## Componentes:
 
