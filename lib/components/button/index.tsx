@@ -14,24 +14,6 @@ export function Button(props: ButtonProps): JSX.Element {
     ...props,
   };
 
-  /*
-    Assim declarando cada variavel individua 
-  */
-  // const IconLeft =
-  //   iconSet[props.iconLeft] ||
-  //   iconSet[`Fa${props.iconLeft}` as unknown as never];
-
-  // const IconRight =
-  //   iconSet[props.IconRight] ||
-  //   iconSet[`Fa${props.IconRight}` as unknown as never];
-
-  // const IconCenter =
-  //   iconSet[props.IconCenter] ||
-  //   iconSet[`Fa${props.IconCenter}` as unknown as never];
-
-  /*
-    Assim declarando as três variaveis ao mesmo tempo
-  */
   const [IconLeft, IconRight, IconCenter] = [
     iconSet[props.iconLeft] ||
       iconSet[`Fa${props.iconLeft}` as unknown as never],
@@ -44,7 +26,6 @@ export function Button(props: ButtonProps): JSX.Element {
   return (
     <Container props={finalProps}>
       <>
-        {/* Verificação para ver se é o icone do meio, se for renderiza APENAS ele, se não renderiza o resto */}
         {props.IconCenter ? (
           <IconCenter />
         ) : (
