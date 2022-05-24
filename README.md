@@ -46,7 +46,7 @@ Personalize o seu componente:
 - [x] Colors
 - [x] Typograph
 - [x] Button
-- [ ] Text
+- [X] Text
 - [ ] Input + Label
 - [ ] Card
 
