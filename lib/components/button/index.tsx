@@ -39,3 +39,10 @@ export function Button(props: ButtonProps): JSX.Element {
     </Container>
   );
 }
+
+Button.defaultProps = {
+  backgroundColor: "#F6BE27",
+  color: "#242424",
+  border: "small",
+  buttonSize: "medium",
+}
