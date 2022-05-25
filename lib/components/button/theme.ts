@@ -1,4 +1,3 @@
-// Theme
 export const border = {
   none: "0",
   small: "4px",

@@ -1,11 +1,13 @@
 {
   "name": "domeui-components",
-  "description": "React components library - DomeUI",
+  "description": "DomeUI component React UI library.",
   "keywords": [
     "react",
     "next",
     "biblioteca",
+    "library",
     "storybook",
+    "componentes",
     "components"
   ],
   "license": "MIT",

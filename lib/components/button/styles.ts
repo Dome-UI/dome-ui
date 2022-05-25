@@ -1,4 +1,3 @@
-// Bibliotecas, types
 import styled from "styled-components";
 import { ButtonStylesProps } from "./types";
 

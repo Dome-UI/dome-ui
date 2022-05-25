@@ -1,11 +1,11 @@
-# Problema
+# Problem
 
-> Relate aqui o problema encontrado
+> Report the problem found here
 
-## Foto / Gif: 
+## Photo / GIF: 
 
-> Insira uma imagem ou gif que demonstre o problema
+> Insert an image or gif that demonstrates the problem
 
-_ex:_ 
+_exemple:_ 
 
-![Alt da imagem](https://source.unsplash.com/100x50)
+![Alt of Image](https://source.unsplash.com/100x50)

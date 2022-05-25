@@ -1,26 +1,26 @@
 
-## Tipo de alteração:
+## Change type:
 
-*Selecione as tarefas realizadas.*
+*Select the tasks performed.*
 
-- [ ] Nova funcionalidade
-- [ ] Estilização
-- [ ] Correção de Bug
-- [ ] Alteração de baixo impacto (Mudanças que não afetarão o funcionamento do projeto)
-- [ ] Alterações de impacto (Mudanças que afetarão o funcionamento do projeto)
-- [ ] Alteração na documentação será necessária
-- [ ] Refatoração / otimização
-- [ ] Inclusão ou remoção de biblioteca
+- [ ] New functionality
+- [ ] Stylization
+- [ ] Bug Fix
+- [ ] Low impact change (Changes that will not affect the functioning of the project)
+- [ ] Impact changes (Changes that will affect the functioning of the project)
+- [ ] Change in documentation will be necessary
+- [ ] Refactoring / Optimization
+- [ ] Adding or removing library
 
-## Descrição *
+## Description *
 
-Inclua aqui uma descrição das novidades, mudanças ou problemas corrigidos.
+Include a description of what's new, changed, or fixed issues here.
 
 
-## Foto / Gif: 
+## Photo / Gif:
 
-*De todas as medias*
+*Of all media*
 
-## Trecho de código relevante:
+## Relevant code snippet:
 
-*Explique algum trecho de código complexo*
+*Explain some complex code snippet*

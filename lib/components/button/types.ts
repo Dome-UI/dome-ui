@@ -1,8 +1,6 @@
-// Bibliotecas, theme
 import * as iconSet from "react-icons/fa";
 import { buttonSize, border } from "./theme";
 
-// Types próprio do componente
 export interface ButtonProps {
   label?: string;
   backgroundColor?: string;
@@ -18,7 +16,6 @@ export interface ButtonProps {
   IconCenter?: keyof typeof iconSet;
 }
 
-// Types da estilização do componente (Styled components)
 export interface ButtonStylesProps {
   props: {
     backgroundColor?: string;
