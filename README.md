@@ -1,34 +1,30 @@
 # DomeUI
 
-Bem vindo a biblioteca de componentes _open source_ **DomeUI**.
+Welcome to the **Dome** open source component React UI library.
 
----
-
-## Explore os componentes no Storybook:
+## Explore the components in Storybook:
 
 [Storybook](https://dome-ui.vercel.app/)
 
----
+### How to use
 
-### Como usar
-
-Baixe as dependencias:
+Download the dependencies:
 
 ```sh
 yarn add domeui-components
 
-# ou
+# or
 
 npm install domeui-components
 ```
 
-Use o componente:
+Use the component:
 
 ```js
 import { Button } from "domeui-components";
 ```
 
-Personalize o seu componente:
+Customize your component:
 
 ```js
 <Button
@@ -41,80 +37,72 @@ Personalize o seu componente:
 />
 ```
 
-## Componentes:
+# Want to contribute to the project?
 
-- [x] Colors
-- [x] Typograph
-- [x] Button
-- [X] Text
-- [ ] Input + Label
-- [ ] Card
-
----
-
-# Quer contribuir com o projeto? 
-
-Pensou em algum componente que ainda não exista? e quer se arriscar a criar um? segue o passo a passo.
+Did you think of a component that doesn't exist yet? and want to risk creating one? follow step by step.
 
 ### 0. Fork
-Crie um fork do projeto em seu perfil particular do Github, com isso ele irá criar um repositório identico automaticamente sem seus repositórios particulares.
+Fork the project in your private Github profile, this will automatically create an identical repository without your private repositories.
 
 ### 1. Git clone
-Entre no repositório e o projeto
+
+Enter the repository and the project
 ```sh
 https://github.com/Dome-UI/dome-ui.git
 ```
 
-Entre na pasta e baixe as dependencias
-
+Enter the folder and download the dependencies
 ```sh
 cd dome-ui
 
-# Depois
+# after
 
 yarn
 ```
 
 ### 2. Branch
-Crie uma branch, lugar para desenvolver seu componente tranquilamente.
+Create a branch, where you can easily develop your component.
 ```sh
-yarn checkout -b feat/nomeComponente-component
+yarn checkout -b feat/ComponentName-component
 ```
 
-### 3. Pasta
-Crie uma pasta com o nome do componente dentro de `./lib/components`.
+### 3. Folder
+Create a folder with the component name inside `./lib/components`.
 
-### 4. Arquivos
-Dentro de `./lib/components/nomeComponente`:
+### 4. Files
+Inside `./lib/components/ComponentName`:
 
-  - `index.tsx`, nesse arquivo irá conter o seu componente desenvolvido em React.
+  - `index.tsx`
+    - This file will contain your component developed in React.
 
-  - `index.stories.js`, para renderizar seu componente no Storybook, exemplo:
+  - `index.stories.js`
+    - To render your component in Storybook, example:
+    ```js
+    // Import your component
+    import { ComponentName } from '@lib/components/ComponentName';
 
-  ```js
-  // Importe o seu componente 
-  import { nomeComponente } from '@lib/components/nomeComponente';
+    // Side menu name (Category)
+    export default { 
+      title: "Components/ComponentName",
+      component: ComponentName,
+    }
 
-  // Nome do menu lateral (Categoria) 
-  export default { 
-    title: "Components/nomeComponente",
-    component: nomeComponente,
-  }
+    const Template = args => <ComponentName {...args} />
 
-  const Template = args => <nomeComponente {...args} />
+    // Variations within "Component name" (Create a new side submenu).
+    export const Default = Template.bind({})
 
-  // Variações dentro de "nomeComponente" (Cria um novo sub-menu lateral). 
-  export const Default = Template.bind({})
+    // Properties of each variation
+    Default.args = {
+      label: "Default label example",
+    }
+    ```
 
-  // Propriedades de cada variação
-  Default.args = {
-    label: "Exemplo de label padrão",
-  }
-  ```
+  - `styles.ts`
+    - Styling your component which is in `index.tsx`.
 
-  - `styles.ts`, estilização do seu componente que está em `index.tsx`.
-
-  - `theme.ts`, conterá algumas propriedades padrão que seu componente irá ter, o resultado disso é um _Select_ no Storybook, exemplo:
+  - `theme.ts`
+    - It will contain some default properties that your component will have, the result of which is a _Select_ in the Storybook, for example:
   ```js
   export const border = {
     none: "0",
@@ -124,8 +112,27 @@ Dentro de `./lib/components/nomeComponente`:
   };
   ```
 
-  - `types.ts`, tipagem que irá ser usado dentro do componente `index.tsx` e da estilização `styles.ts`.
+  - `types.ts`
+    - Typing that will be used inside the `index.tsx` component and the `styles.ts` styling.
 
 ### 5. Pull Request
 
-Após o desenvolvimento lindo e belo do componente, abra um **Pull request** e aguarde a validação.
+After the beautiful and beautiful development of the component, open a **Pull request** and wait for the validation.
+
+
+## Contributors
+
+The following people made this project possible:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/EduardooPV">
+        <img src="https://github.com/EduardooPV.png" width="100px;" alt="Photo of Luiz Eduardo on GitHub"/><br>
+        <sub>
+          <b>Luiz Eduardo</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
