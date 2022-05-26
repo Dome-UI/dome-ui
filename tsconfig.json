@@ -46,5 +46,5 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/index.tsx"  ]
+, "pages/index.tsx", "lib/components/button/index.stories.js", "lib/components/button/input/index.stories.js"  ]
 }
