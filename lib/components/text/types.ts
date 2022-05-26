@@ -1,3 +1,4 @@
+import React from "react";
 import {
   fontSize,
   fontWeight,
@@ -6,7 +7,7 @@ import {
   textDecoration,
 } from "./theme";
 
-export interface TextProps {
+export interface TextProps extends React.ComponentPropsWithRef<"p">{
   label?: string;
   tag?:
     | "h1"
@@ -17,11 +18,10 @@ export interface TextProps {
     | "h6"
     | "p"
     | "span"
-    | "li"
-    | "label"
-    | "a"
     | "strong"
-    | "label";
+    | "i"
+    | "sub"
+    | "sup"
   fontSize?: keyof typeof fontSize;
   fontWeight?: keyof typeof fontWeight;
   lineHeight?: keyof typeof lineHeight;

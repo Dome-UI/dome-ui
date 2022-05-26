@@ -24,7 +24,7 @@ export function Button(props: ButtonProps): JSX.Element {
   ];
 
   return (
-    <Container props={finalProps}>
+    <Container props={finalProps} >
       <>
         {props.IconCenter ? (
           <IconCenter />

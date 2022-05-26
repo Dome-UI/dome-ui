@@ -1,7 +1,8 @@
+import React from "react";
 import * as iconSet from "react-icons/fa";
 import { buttonSize, border } from "./theme";
 
-export interface ButtonProps {
+export interface ButtonProps extends React.ComponentPropsWithRef<"button">{
   label?: string;
   backgroundColor?: string;
   color?: string;
