@@ -1,7 +1,7 @@
-import { InputHTMLAttributes } from "react";
+import React from "react";
 import { TypesInput, border, inputSize } from "./theme";
 
-export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends React.ComponentPropsWithRef<"input"> {
   type?: keyof typeof TypesInput;
   border?: keyof typeof border;
   inputSize?: keyof typeof inputSize;
