@@ -134,5 +134,13 @@ The following people made this project possible:
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/Tonashiro">
+        <img src="https://github.com/Tonashiro.png" width="100px;" alt="Photo of Vinicius Tonashiro on GitHub"/><br>
+        <sub>
+          <b>Vinicius Tonashiro</b>
+        </sub>
+      </a>
+    </td>
   </tr>
 </table>
