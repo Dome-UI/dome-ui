@@ -11,7 +11,7 @@
     "components"
   ],
   "license": "MIT",
-  "version": "1.3.1",
+  "version": "1.5.2",
   "types": "dist/components.d.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -23,9 +23,7 @@
     "url": "https://github.com/Dome-UI/dome-ui"
   },
   "scripts": {
-    "prebuild": "rimraf dist && rimraf types && rimraf dist-storybook",
-    "build:npm": "rollup -c",
-    "build": "build-storybook -o dist-storybook",
+    "build": "rimraf dist && rimraf types && rimraf dist-storybook && rollup -c && build-storybook -o dist-storybook",
     "dev": "start-storybook -p 6006",
     "export:types": "tsc",
     "export:docs:mdx": "find ./lib -name '*.mdx' -exec cp -prv '{}' './dist' ';' ",
