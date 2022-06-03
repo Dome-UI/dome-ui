@@ -24,15 +24,15 @@ export function Button(props: ButtonProps): JSX.Element {
   ];
 
   return (
-    <Container props={finalProps} >
+    <Container props={finalProps} className="DUI-button">
       <>
         {props.IconCenter ? (
-          <IconCenter />
+          <IconCenter className="DUI-iconCenter" />
         ) : (
           <>
-            {props.iconLeft && <IconLeft />}
+            {props.iconLeft && <IconLeft className="DUI-iconLeft" />}
             {props.label}
-            {props.IconRight && <IconRight />}
+            {props.IconRight && <IconRight className="DUI-iconRight" />}
           </>
         )}
       </>
@@ -45,4 +45,4 @@ Button.defaultProps = {
   color: "#242424",
   border: "small",
   buttonSize: "medium",
-}
+};

@@ -12,7 +12,7 @@ export function Card(props: CardProps) {
 
   const finalProps = {
     textAlign,
-    ...props
+    ...props,
   };
 
   function handleDescriptionVisible() {
@@ -36,29 +36,45 @@ export function Card(props: CardProps) {
   ];
 
   return (
-    <Container descriptionVisible props={finalProps}> 
+    <Container
+      descriptionVisible
+      props={finalProps}
+      className="DUI-containerCard"
+    >
       {/* Header */}
-      <Header props={finalProps}>
+      <Header props={finalProps} className="DUI-containerHeader">
         {props.buttonLeftTitle && (
-          <a href={props.buttonLeftTitleHref} target="_blank">
+          <a
+            href={props.buttonLeftTitleHref}
+            target="_blank"
+            className="DUI-buttonLeftTitleHref"
+          >
             <ButtonLeftTitle
               color={props.buttonLeftTitleColor}
               fontSize="24px"
+              className="DUI-buttonLeftTitleIcon"
             />
           </a>
         )}
 
-        {props.title && <p>{props.title}</p>}
+        {props.title && <p className="DUI-cardTitle">{props.title}</p>}
 
         {props.buttonRightTitle && (
-          <a href={props.buttonRightTitleHref} target="_blank">
-            <ButtonRightTitle color={props.buttonRightTitleColor} />
+          <a
+            href={props.buttonRightTitleHref}
+            target="_blank"
+            className="DUI-buttonRightTitleHref"
+          >
+            <ButtonRightTitle
+              color={props.buttonRightTitleColor}
+              className="DUI-buttonRightTitleIcon"
+            />
           </a>
         )}
       </Header>
 
       {/* Image */}
-      {props.imageUrl && <img src={props.imageUrl} />}
+      {props.imageUrl && <img src={props.imageUrl} className="DUI-imageCard" />}
 
       {/* Footer */}
       {props.buttonRightDescription ||
@@ -66,40 +82,56 @@ export function Card(props: CardProps) {
       props.buttonLeftDescription ? (
         <Footer>
           {props.description && descriptionVisible && (
-            <span>{props.descriptionText}</span>
+            <span className="DUI-descriptionText">{props.descriptionText}</span>
           )}
 
           <div>
             <div>
               {props.buttonLeftDescription && (
-                <a href={props.buttonLeftDescriptionHref} target="_blank">
+                <a
+                  href={props.buttonLeftDescriptionHref}
+                  target="_blank"
+                  className="DUI-buttonLeftDescriptionHref"
+                >
                   <ButtonLeftDescription
                     color={props.buttonLeftDescriptionColor}
                     fontSize="24px"
+                    className="DUI-buttonLeftDescriptionIcon"
                   />
                 </a>
               )}
               {props.buttonRightDescription && (
-                <a href={props.buttonRightDescriptionHref} target="_blank">
+                <a
+                  href={props.buttonRightDescriptionHref}
+                  target="_blank"
+                  className="DUI-buttonRightDescriptionHref"
+                >
                   <ButtonRightDescription
                     color={props.buttonRightDescriptionColor}
                     fontSize="24px"
+                    className="DUI-butonRightDescriptionIcon"
                   />
                 </a>
               )}
             </div>
 
             {props.buttonReadMore && descriptionVisible ? (
-              <button onClick={handleDescriptionVisible}>
+              <button
+                onClick={handleDescriptionVisible}
+                className="DUI-buttonReadMore"
+              >
                 See less
-                <FaArrowUp />
+                <FaArrowUp className="DUI-buttonReadMoreIcon" />
               </button>
             ) : (
               props.buttonReadMore &&
               !descriptionVisible && (
-                <button onClick={handleDescriptionVisible}>
+                <button
+                  onClick={handleDescriptionVisible}
+                  className="DUI-buttonReadMore"
+                >
                   View more
-                  <FaArrowDown />
+                  <FaArrowDown className="DUI-buttonReadMoreIcon" />
                 </button>
               )
             )}

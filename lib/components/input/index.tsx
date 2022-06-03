@@ -39,11 +39,14 @@ export function Input(props: InputProps) {
       props.iconInsideRight ||
       props.iconOutsideLeft ||
       props.iconOutsideRight ? (
-        <Container props={finalProps}>
-          {props.label && <label>{props.label}</label>}
-          <Flex>
+        <Container props={finalProps} className="DUI-containerInput">
+          {props.label && <label className="DUI-label">{props.label}</label>}
+          <Flex className="DUI-flexInput">
             {props.iconOutsideLeft && (
-              <IconOutsideLeft color={props.iconOutsideLeftColor} />
+              <IconOutsideLeft
+                color={props.iconOutsideLeftColor}
+                className="DUI-iconOutsideLeft"
+              />
             )}
             <Content>
               {props.iconInsideLeft && (
@@ -55,12 +58,14 @@ export function Input(props: InputProps) {
                     zIndex: "2",
                   }}
                   color={props.iconInsideLeftColor}
+                  className="DUI-iconInsideLeft"
                 />
               )}
               <InputContainer
                 props={finalProps}
                 type={props.type}
                 placeholder={props.textPlaceholder && props.textPlaceholder}
+                className="DUI-containerInput"
               />
               {props.iconInsideRight && (
                 <IconInsideRight
@@ -71,27 +76,38 @@ export function Input(props: InputProps) {
                     zIndex: "2",
                   }}
                   color={props.iconInsideRightColor}
+                  className="DUI-inconInsideRight"
                 />
               )}
             </Content>
             {props.iconOutsideRight && (
-              <IconOutsideRight color={props.iconOutsideRightColor} />
+              <IconOutsideRight
+                color={props.iconOutsideRightColor}
+                className="DUI-iconOutsideRight"
+              />
             )}
           </Flex>
-          {props.supportText && <span>{props.supportText}</span>}
+          {props.supportText && (
+            <span className="DUI-supportSpan">{props.supportText}</span>
+          )}
         </Container>
       ) : (
         <Container props={finalProps}>
           {props.label && (
-            <label style={{ marginLeft: "15px" }}>{props.label}</label>
+            <label style={{ marginLeft: "15px" }} className="DUI-label">
+              {props.label}
+            </label>
           )}
           <InputContainer
             props={finalProps}
             type={props.type}
             placeholder={props.textPlaceholder && props.textPlaceholder}
+            className="DUI-containerInput"
           />
           {props.supportText && (
-            <span style={{ marginLeft: "15px" }}>{props.supportText}</span>
+            <span style={{ marginLeft: "15px" }} className="DUI-supportSpan">
+              {props.supportText}
+            </span>
           )}
         </Container>
       )}

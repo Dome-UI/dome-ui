@@ -27,6 +27,7 @@ export function Text(props: TextProps): JSX.Element {
 
   return (
     <FinalTag
+      className="DUI-text"
       style={{
         fontSize: finalFontSize,
         fontWeight: finalFontWeight,
