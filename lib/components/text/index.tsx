@@ -1,3 +1,4 @@
+import React from "react";
 import { TextProps } from "./types";
 import {
   fontSize,

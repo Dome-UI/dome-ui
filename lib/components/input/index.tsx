@@ -1,3 +1,4 @@
+import React from "react";
 import { Input as InputContainer, Container, Content, Flex } from "./styles";
 import { border as borderTheme, inputSize as sizeTheme } from "./theme";
 import { InputProps } from "./types";
