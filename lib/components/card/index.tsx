@@ -12,6 +12,7 @@ export function Card(props: CardProps) {
 
   const finalProps = {
     textAlign,
+    ...props
   };
 
   function handleDescriptionVisible() {
@@ -35,7 +36,7 @@ export function Card(props: CardProps) {
   ];
 
   return (
-    <Container descriptionVisible>
+    <Container descriptionVisible props={finalProps}> 
       {/* Header */}
       <Header props={finalProps}>
         {props.buttonLeftTitle && (

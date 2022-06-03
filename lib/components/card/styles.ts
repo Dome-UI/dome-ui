@@ -22,6 +22,8 @@ export const Container = styled.div<ContainerProps>`
     max-height: 190px;
     width: 100%;
   }
+
+  ${(props) => props.props.styles};
 `;
 
 export const Header = styled.div<HeaderProps>`

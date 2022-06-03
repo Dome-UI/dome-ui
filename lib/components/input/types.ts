@@ -6,7 +6,7 @@ export interface InputProps extends React.ComponentPropsWithRef<"input"> {
   type?: keyof typeof TypesInput;
   border?: keyof typeof border;
   inputSize?: keyof typeof inputSize;
-  
+
   iconOutsideLeft?: keyof typeof iconSet;
   iconOutsideLeftColor?: string;
 
@@ -25,6 +25,13 @@ export interface InputProps extends React.ComponentPropsWithRef<"input"> {
   textPlaceholder?: string;
   fullWidth?: boolean;
   borderLineBottom?: boolean;
+  styles?: {};
+}
+
+export interface ContainerStyleProps {
+  props: {
+    styles?: {};
+  };
 }
 
 export interface InputStyleProps {

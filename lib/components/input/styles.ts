@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { InputStyleProps } from "./types";
+import { ContainerStyleProps, InputStyleProps } from "./types";
 import { typograph as t } from "@lib/theme/typograph/typograph";
 
-export const Container = styled.div`
+export const Container = styled.div<ContainerStyleProps>`
   display: flex;
   flex-direction: column;
 
@@ -20,6 +20,8 @@ export const Container = styled.div`
     font-size: ${t.paragraphSmall.fontSize};
     line-height: ${t.paragraphSmall.lineHeight};
   }
+
+  ${(props) => props.props.styles};
 `;
 
 export const Content = styled.div`

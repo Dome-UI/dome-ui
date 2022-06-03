@@ -25,10 +25,14 @@ export interface CardProps {
   buttonReadMore?: boolean;
   descriptionText?: string;
   description?: boolean;
+  styles?: {};
 }
 
 export interface ContainerProps {
-  descriptionVisible: boolean;
+  descriptionVisible?: boolean;
+  props: {
+    styles?: {};
+  };
 }
 
 export interface HeaderProps {

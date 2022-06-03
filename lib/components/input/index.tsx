@@ -39,7 +39,7 @@ export function Input(props: InputProps) {
       props.iconInsideRight ||
       props.iconOutsideLeft ||
       props.iconOutsideRight ? (
-        <Container>
+        <Container props={finalProps}>
           {props.label && <label>{props.label}</label>}
           <Flex>
             {props.iconOutsideLeft && (
@@ -81,7 +81,7 @@ export function Input(props: InputProps) {
           {props.supportText && <span>{props.supportText}</span>}
         </Container>
       ) : (
-        <Container>
+        <Container props={finalProps}>
           {props.label && (
             <label style={{ marginLeft: "15px" }}>{props.label}</label>
           )}
