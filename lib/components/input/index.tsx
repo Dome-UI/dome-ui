@@ -4,14 +4,6 @@ import { border as borderTheme, inputSize as sizeTheme } from "./theme";
 import { InputProps } from "./types";
 import * as iconSet from "react-icons/fa";
 
-// Adicionar label X
-// Adicionar placeholder X
-// Adicionar icone dentro esquerda
-// Adicionar icone dentro direita
-// Adicionar icone fora esquerda
-// Adicionar icone fora direita
-// Adicionar texto de ajuda embaixo do input
-
 export function Input(props: InputProps) {
   const borderRadius = borderTheme[props.border];
   const padding = sizeTheme[props.inputSize];
@@ -76,7 +68,7 @@ export function Input(props: InputProps) {
                     zIndex: "2",
                   }}
                   color={props.iconInsideRightColor}
-                  className="DUI-inconInsideRight"
+                  className="DUI-iconInsideRight"
                 />
               )}
             </Content>
@@ -92,7 +84,7 @@ export function Input(props: InputProps) {
           )}
         </Container>
       ) : (
-        <Container props={finalProps}>
+        <Container props={finalProps} className="DUI-containerInput">
           {props.label && (
             <label style={{ marginLeft: "15px" }} className="DUI-label">
               {props.label}

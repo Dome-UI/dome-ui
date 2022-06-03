@@ -19,6 +19,7 @@ export const Container = styled.div<ContainerProps>`
   transition: all 2s;
 
   img {
+    display: block;
     max-height: 190px;
     width: 100%;
   }
@@ -43,9 +44,6 @@ export const Header = styled.div<HeaderProps>`
   a:first-child {
     width: 50px;
     height: 50px;
-
-    background: #eeebff;
-    border: 1px dashed #6648ff;
   }
 
   a:last-child {
@@ -101,9 +99,6 @@ export const Footer = styled.div`
         align-items: center;
         justify-content: center;
         flex: none;
-
-        background: #eeebff;
-        border: 1px dashed #6648ff;
       }
     }
   }

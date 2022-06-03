@@ -80,7 +80,7 @@ export function Card(props: CardProps) {
       {props.buttonRightDescription ||
       props.buttonReadMore ||
       props.buttonLeftDescription ? (
-        <Footer>
+        <Footer className="DUI-containerFooter">
           {props.description && descriptionVisible && (
             <span className="DUI-descriptionText">{props.descriptionText}</span>
           )}
@@ -109,7 +109,7 @@ export function Card(props: CardProps) {
                   <ButtonRightDescription
                     color={props.buttonRightDescriptionColor}
                     fontSize="24px"
-                    className="DUI-butonRightDescriptionIcon"
+                    className="DUI-buttonRightDescriptionIcon"
                   />
                 </a>
               )}
