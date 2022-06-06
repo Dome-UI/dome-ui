@@ -1997,11 +1997,10 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
     uuid-browser "^3.1.0"
-
-"@storybook/addon-backgrounds@6.5.7":
-  version "6.5.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-6.5.7.tgz#2bd823a94db05bf2b836121adb7e7b49c33b99b2"
-  integrity sha512-ryisDpxbIEZbYJkQWU5xvsj940jhWrWizedFsY9g/qBIBi33UrW/H1hKZQtmg0bzuNTgYcBjRy50ikJgH/eKAQ==
+"@storybook/addon-backgrounds@6.5.6":
+  version "6.5.6"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-6.5.6.tgz#3763acdff1f2260286e165cf35e87d8097245496"
+  integrity sha512-D2khx57WBvQ2Ta/UMCZa8KQwAzVunk/oKmTJd6vau+1bm88wEx3a2seI9tZtC6nVHgHaBYgoH8os+7XpmlYlVQ==
   dependencies:
     "@storybook/addons" "6.5.7"
     "@storybook/api" "6.5.7"
