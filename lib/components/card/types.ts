@@ -1,10 +1,12 @@
 import * as iconSet from "react-icons/fa";
-import { positionTitle } from "./theme";
+import { positionTitle, border, shadow } from "./theme";
 
 export interface CardProps {
   title?: string;
   positionTitle?: keyof typeof positionTitle;
   imageUrl?: string;
+  border?: keyof typeof border;
+  shadow?: keyof typeof shadow;
 
   buttonLeftTitle?: keyof typeof iconSet;
   buttonLeftTitleHref?: string;
@@ -31,6 +33,8 @@ export interface CardProps {
 export interface ContainerProps {
   descriptionVisible?: boolean;
   props: {
+    borderRadius?: string;
+    boxShadow?: string;
     styles?: {};
   };
 }

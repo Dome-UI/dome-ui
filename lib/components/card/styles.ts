@@ -15,8 +15,8 @@ export const Container = styled.div<ContainerProps>`
 
   width: fit-content;
   max-width: 380px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  transition: all 2s;
+  border-radius: ${(props) => props.props.borderRadius};
+  box-shadow: ${(props) => props.props.boxShadow};
 
   img {
     display: block;

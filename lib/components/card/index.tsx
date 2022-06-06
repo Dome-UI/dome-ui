@@ -4,14 +4,18 @@ import { CardProps } from "./types";
 import * as iconSet from "react-icons/fa";
 
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
-import { positionTitle } from "./theme";
+import { positionTitle, border, shadow } from "./theme";
 
 export function Card(props: CardProps) {
   const [descriptionVisible, setDescriptionVisible] = useState(false);
   const textAlign = positionTitle[props.positionTitle];
+  const borderRadius = border[props.border];
+  const boxShadow = shadow[props.shadow]
 
   const finalProps = {
+    borderRadius,
     textAlign,
+    boxShadow,
     ...props,
   };
 
@@ -152,4 +156,7 @@ Card.defaultProps = {
   buttonRightTitleColor: "#6648FF",
   buttonLeftDescriptionColor: "#6648FF",
   buttonRightDescriptionColor: "#6648FF",
+
+  border: "small",
+  shadow: "medium"
 };
