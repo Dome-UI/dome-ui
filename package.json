@@ -116,7 +116,7 @@
     "minimist": "1.2.6",
     "react-icons": "^4.3.1",
     "styled-components": "^5.3.5",
-    "trim": "0.0.3",
+    "trim": "1.0.1",
     "trim-newlines": "3.0.1"
   }
 }
