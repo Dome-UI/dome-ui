@@ -112,7 +112,7 @@
   "dependencies": {
     "@types/styled-components": "^5.1.25",
     "braces": "2.3.1",
-    "glob-parent": "5.1.2",
+    "glob-parent": "6.0.2",
     "minimist": "1.2.6",
     "react-icons": "^4.3.1",
     "styled-components": "^5.3.5",
