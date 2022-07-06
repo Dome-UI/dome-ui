@@ -3,13 +3,13 @@ import { position, border, shadow } from "./theme";
 
 export interface CardProps {
   title?: string;
-  positionTitle?: keyof typeof position;
+  positionTitle: keyof typeof position;
 
-  border?: keyof typeof border;
-  shadow?: keyof typeof shadow;
+  border: keyof typeof border;
+  shadow: keyof typeof shadow;
 
   showIcon?: boolean;
-  icon?: keyof typeof iconSet;
+  icon: keyof typeof iconSet;
   iconColor?: string;
   positionIcon?: keyof typeof position;
 
