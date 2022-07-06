@@ -6,4 +6,4 @@ updates:
       interval: "daily"
     commit-message:
       prefix: "npm"
-    open-pull-requests-limit: 50
+    open-pull-requests-limit: 1
